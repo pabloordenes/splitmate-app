@@ -108,8 +108,6 @@ h4 {
   grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
   gap: 20px; /* Espacio entre los elementos */
   padding: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-top: -20px;
   button {
     background: none;
@@ -131,7 +129,7 @@ h4 {
   align-items: center;
   text-align: center;
   margin: 0; /* Evita márgenes que desajusten la cuadrícula */
-  padding: 30px; /* Espaciado interno */
+  padding: 19px; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
   background-color: #e9effb;
   box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.21);
@@ -139,11 +137,11 @@ h4 {
 }
 
 .dashboard ion-icon {
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .ios .dashboard ion-card {
-  padding: 30px; /* Asegura un espaciado uniforme */
+  padding: 15px; /* Asegura un espaciado uniforme */
 }
 
 .ios .dashboard {
