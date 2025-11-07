@@ -31,6 +31,19 @@ Incluye funcionalidades como:
 
 ---
 
+## 📸 Demo (Screenshots)
+
+**Registro**
+<img width="749" height="765" alt="image" src="https://github.com/user-attachments/assets/425ae794-f74c-4225-a935-aca95cc576e6" />
+
+**Inicio de sesión**
+<img width="774" height="778" alt="image" src="https://github.com/user-attachments/assets/ecd34591-54c5-49e3-a717-79ea4fe4b2ee" />
+
+**HomePage**
+<img width="770" height="775" alt="image" src="https://github.com/user-attachments/assets/89549dda-15e2-459d-ac7d-aa72c475338a" />
+
+---
+
 ## 🛠️ Tecnologías utilizadas
 
 - **Framework:** Ionic + Angular
