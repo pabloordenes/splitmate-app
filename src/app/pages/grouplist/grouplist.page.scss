@@ -1,0 +1,58 @@
+ion-content {
+  font-family: 'DM Sans', sans-serif;
+}
+
+button {
+  background-color: #ffffff;
+  margin-right: 20px;
+}
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #123359;
+  margin-right: 30px;
+}
+
+ion-icon {
+  font-size: 30px;
+  color: #0f3e89;
+  margin-left: 10px;
+}
+
+.groups-item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.group-button {
+  display: flex; /* Alinea avatar y texto en fila */
+  align-items: center; /* Centra verticalmente */
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  cursor: pointer; /* Hace el cursor un puntero */
+}
+
+.group-button:hover {
+  background-color: #f1f1f1; /* Efecto hover */
+}
+
+ion-avatar {
+  margin-right: 15px; /* Espacio entre el avatar y el texto */
+}
+
+ion-label {
+  text-align: left; /* Alinea el texto del label a la izquierda */
+  font-size: 15px;
+  color: #000000;
+}

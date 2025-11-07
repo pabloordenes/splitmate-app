@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <button (click)="back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <h4>Ajustes</h4>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-toggle [(ngModel)]="notificationsToggle" (ionChange)="onToggleChange($event, 'notifications')">Notificaciones</ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-toggle [(ngModel)]="darkmodeToggle" (ionChange)="onToggleChange($event, 'darkmode')">Modo Oscuro</ion-toggle>
+    </ion-item>
+    <p>Versión 0.0.1</p>
+  </ion-list>
+  <p>Copyright (c) [2025] [Pablo Ordenes U.]</p>
+
+  <footer>
+    <div class="custom-tab-bar">
+      <div class="items">
+        <div class="tab-item">
+          <button (click)="homeView()">
+            <ion-icon name="home-outline"></ion-icon>
+            <p>Home</p>
+          </button>
+        </div>
+        <div class="tab-item">
+          <button (click)="settingsView()">
+            <ion-icon name="settings-outline"></ion-icon>
+            <p>Ajustes</p>
+          </button>
+        </div>
+        <div class="tab-item">
+          <button (click)="logout()">
+            <ion-icon name="log-out-outline"></ion-icon>
+            <p>Salir</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</ion-content>

@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <button (click)="back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <h4>Reportes</h4>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="assets/icon/missingpfp-icon.png" />
+      </ion-avatar>
+      <ion-label>Viaje familiar</ion-label>
+      <button>
+        <ion-icon name="document-text-outline"></ion-icon>
+      </button>
+    </ion-item>
+    <ion-item>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="assets/icon/missingpfp-icon.png" />
+      </ion-avatar>
+      <ion-label>Junta de fin de año</ion-label>
+      <button>
+        <ion-icon name="document-text-outline"></ion-icon>
+      </button>
+    </ion-item>
+    <ion-item>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="assets/icon/missingpfp-icon.png" />
+      </ion-avatar>
+      <ion-label>Gastos comunes</ion-label>
+      <button>
+        <ion-icon name="document-text-outline"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+  <button class="btn">
+    Generar reporte general
+  </button>
+  <p>Los reportes se exportan como Excel.</p>
+</ion-content>

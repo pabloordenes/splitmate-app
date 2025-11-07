@@ -1,0 +1,31 @@
+<ion-content>
+  <button class="back-button" (click)="back()">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </button>
+  <div class="register-content">
+    <ion-card>
+      <ion-card-header>
+        <h1>Crear Perfil</h1>
+        <img src="assets/icon/missingpfp-icon.png" alt="missingpfp">
+      </ion-card-header>
+      <ion-card-content>
+        <form [formGroup]="createProfileForm" (ngSubmit)="verify()">
+          <div class="inputs">
+            <ion-item>
+              <ion-input formControlName="nombre" label="Nombre" labelPlacement="floating" type="text" placeholder="Tu nombre"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input formControlName="apellido" label="Apellido" labelPlacement="floating" type="text" placeholder="Tu apellido"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input formControlName="id" label="Usuario (ID)" labelPlacement="floating" type="text" placeholder="Sin mayúsculas ni espacios"></ion-input>
+            </ion-item>
+          </div>
+          <div class="register-container">
+            <button class="main-btn" type="submit">Continuar</button>
+          </div>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

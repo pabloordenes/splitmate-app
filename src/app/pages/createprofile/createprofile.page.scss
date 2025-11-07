@@ -1,0 +1,144 @@
+ion-item, ion-input {
+  p {
+    font-size: 15px;
+  }
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+}
+
+.add-member {
+  button {
+    background: none;
+
+    ion-icon {
+      font-size: 30px;
+      color: #0f3e89;
+    }
+  }
+  p {
+    margin-left: 15px;
+  }
+}
+
+.back-button {
+  margin-top: 37px;
+  background: none;
+  margin-left: -226px;
+  ion-icon {
+    color: #0f3e89;
+    font-size: 30px;
+  }
+}
+
+.register-container {
+  margin-top: 20px;
+  display: grid;
+  grid-column: auto;
+  gap: 10px;
+
+  ion-checkbox {
+    font-size: 13px;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    display: block;
+    text-align: center;
+  }
+}
+
+.register-content {
+
+}
+
+ion-content {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+
+ion-card-header {
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin-top: -70px;
+    font-weight: bold;
+    color: #123359;
+  }
+  img {
+    max-width: 100px;
+  }
+}
+
+.ios ion-card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-card {
+  margin-top: 40px;
+}
+
+.ios ion-card {
+  margin-top: 40px;
+}
+
+.inputs {
+  color: black;
+  margin-top: -20px;
+  .bg-input {
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.27);
+    -moz-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.27);
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.27);
+    ion-input {
+      --highlight-color: black;
+      --background: transparent;
+      --border-color: transparent;
+      margin-left: 8px;
+      margin-right: 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+  }
+}
+
+.main-btn {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 25px;
+  background: linear-gradient(to top right, #0f3e89, #12355c);
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secondary-btn {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 25px;
+  border: 2px solid #0f3e89;
+  background-color: white;
+  color: #0f3e89;
+  flex-direction: column;
+  align-items: center;
+}

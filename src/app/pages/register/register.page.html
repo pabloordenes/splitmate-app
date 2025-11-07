@@ -1,0 +1,30 @@
+<ion-content>
+  <img src="assets/icon/logo.png" alt="logo">
+  <div class="register-content">
+    <h1>Registro</h1>
+    <ion-card-content>
+      <form [formGroup]="formGroup" (ngSubmit)="verify()">
+        <div class="inputs">
+          <div class="bg-input">
+            <ion-input formControlName="email" name="email" label="Email" labelPlacement="stacked" [clearOnEdit]="true" type="email" placeholder="mail@example.com">
+              <ion-icon slot="start" name="mail-outline"></ion-icon>
+            </ion-input>
+          </div>
+          <div class="bg-input">
+            <ion-input formControlName="pass" name="pass" label="Contraseña" labelPlacement="stacked" type="password" placeholder="**********">
+              <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+              <ion-icon slot="start" name="lock-closed"></ion-icon>
+            </ion-input>
+          </div>
+        </div>
+        <div class="register-container">
+          <ion-checkbox (click)='$event.stopPropagation()'>Estoy de acuerdo con los<a href="#">términos y condiciones</a></ion-checkbox>
+          <button class="main-btn" type="submit">Registrarse</button>
+        </div>
+      </form>
+      <div class="register-container">
+        <button class="secondary-btn" (click)="redirectLogin()">Iniciar Sesión</button>
+      </div>
+    </ion-card-content>
+  </div>
+</ion-content>

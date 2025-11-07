@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="header">
+    <button class="back-button" (click)="back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <h4>Formulario</h4>
+  </div>
+  <div class="register-content">
+    <ion-card>
+      <ion-card-header>
+        <h4>Crear Grupo</h4>
+        <img src="assets/icon/missingpfp-icon.png" alt="missingpfp">
+      </ion-card-header>
+      <ion-card-content>
+        <form [formGroup]="formGroup" (ngSubmit)="verify()">
+          <div class="inputs">
+            <ion-item>
+              <ion-input formControlName="nombre" label="Nombre" labelPlacement="floating" type="text" placeholder="Grupo Ahorro"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input formControlName="descripcion" label="Descripción" labelPlacement="floating" type="text" placeholder="Ahorro para vacaciones"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input formControlName="meta" label="Meta" labelPlacement="floating" type="number" placeholder="15000"></ion-input>
+            </ion-item>
+            <ion-item class="add-member">
+              <button type="button" (click)="routAddMember()">
+                <ion-icon name="add-circle"></ion-icon>
+              </button>
+              <p>Añadir miembros</p>
+            </ion-item>
+          </div>
+          <div class="register-container">
+            <button class="main-btn" type="submit">Crear</button>
+          </div>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

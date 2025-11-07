@@ -1,0 +1,71 @@
+/* chat.page.scss */
+
+.mensaje {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.mio {
+  background-color: #dcf8c6; /* Color para mensajes del usuario actual */
+  text-align: right;
+}
+
+.fecha {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.send-button {
+  background-color: #0056b3; /* Color azul oscuro */
+  color: white; /* Color del ícono */
+  border-radius: 50%; /* Hacer el botón redondo */
+  margin-left: 10px;
+}
+
+.send-button ion-icon {
+  font-size: 24px; /* Tamaño del ícono */
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px; /* Ajusta el padding uniformemente */
+  margin: 0; /* Elimina cualquier margen */
+  width: 100vw; /* Asegúrate de ocupar todo el ancho visible */
+  box-sizing: border-box; /* Incluye el padding en el ancho */
+  z-index: 1000;
+  border-bottom: 1px solid #ddd; /* Línea de separación */
+}
+
+.header h4 {
+  font-weight: bold;
+  color: #123359;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.header button {
+  z-index: 2;
+}
+
+.header ion-icon {
+  font-size: 30px;
+  color: #0f3e89;
+}
+
+.message-input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}

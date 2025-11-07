@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true" class="content-wrapper">
+  <!-- Header -->
+  <div class="header">
+    <button (click)="back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <h4>{{ grupo }}</h4>
+  </div>
+
+  <!-- Contenedor scrollable para los mensajes -->
+  <div class="messages-container">
+    <div *ngFor="let mensaje of mensajes" class="mensaje"
+         [ngClass]="{'mio': mensaje.userId === currentUserId, 'recibido': mensaje.userId !== currentUserId}">
+      <strong>{{ mensaje.autor }}:</strong>
+      {{ mensaje.texto }}
+      <span class="fecha">{{ mensaje.fecha | date:'shortTime' }}</span>
+    </div>
+  </div>
+
+  <!-- Input de mensajes -->
+  <footer>
+    <div class="message-input">
+      <ion-item>
+        <ion-input [(ngModel)]="nuevoMensaje" placeholder="Escribe un mensaje..."></ion-input>
+        <ion-button (click)="enviarMensaje()" class="send-button">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </div>
+  </footer>
+</ion-content>

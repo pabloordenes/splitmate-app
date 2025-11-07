@@ -1,0 +1,52 @@
+<ion-content>
+  <div class="header">
+    <button class="back-button" (click)="back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <h4>Aporte</h4>
+  </div>
+  <div class="register-content">
+    <ion-card>
+      <ion-card-header>
+        <h1>Crear aporte</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <form type="submit">
+          <div class="inputs">
+            <ion-item>
+              <ion-input label="Cantidad del Aporte" labelPlacement="floating" type="number" placeholder="5000"></ion-input>
+            </ion-item>
+            <ion-item class="add-member">
+              <ion-select (click)="loadUserGroups()" label="Seleccionar" placeholder="Grupos">
+                <ion-select-option *ngFor="let grupo of grupos" value="">{{grupo}}</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+        </form>
+        <div class="register-container">
+          <button class="main-btn" (click)="donate()">Listo</button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <!--<div class="custom-tab-bar">
+    <div class="tab-item">
+      <button (click)="homeView()">
+        <ion-icon name="home-outline"></ion-icon>
+        <p>Home</p>
+      </button>
+    </div>
+    <div class="tab-item">
+      <button (click)="settingsView()">
+        <ion-icon name="settings-outline"></ion-icon>
+        <p>Ajustes</p>
+      </button>
+    </div>
+    <div class="tab-item">
+      <button (click)="logout()">
+        <ion-icon name="log-out-outline"></ion-icon>
+        <p>Salir</p>
+      </button>
+    </div>
+  </div>-->
+</ion-content>

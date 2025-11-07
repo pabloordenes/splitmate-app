@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <button (click)="back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <h4>Contactos</h4>
+  </div>
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="assets/icon/missingpfp-icon.png" />
+      </ion-avatar>
+      <ion-label>{{ user.nombre }} {{ user.apellido }}</ion-label>
+      <input type="checkbox" (change)="toggleSelection(user)" [checked]="user.selected">
+    </ion-item>
+  </ion-list>
+  <button class="main-btn" (click)="addSelectedMembers()" >Añadir Miembros</button>
+</ion-content>

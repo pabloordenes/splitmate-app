@@ -1,0 +1,88 @@
+<ion-content [fullscreen]="true">
+  <h4>Home</h4>
+  <div class="header">
+    <h1>Hola, {{ nombre }}!</h1>
+    <button (click)="notificationsView()">
+      <ion-icon name="notifications-outline"></ion-icon>
+    </button>
+  </div>
+  <p class="date">{{ currentDate }}</p>
+  <ion-card class="last-group">
+    <ion-card-header>
+      <div class="container">
+        <div class="group-info">
+          <h2>Bienvenido</h2>
+          <p>Echa un vistazo tus ahorros compartidos</p>
+        </div>
+        <img src="assets/icon/saving-icon.png" alt="">
+      </div>
+    </ion-card-header>
+  </ion-card>
+  <div class="panel-header">
+    <h2>Panel de opciones</h2>
+    <button class="small-btn" >Ver todas</button>
+  </div>
+  <div class="dashboard">
+    <button (click)="formView()">
+      <ion-card class="first-item item">
+        <ion-icon name="cash-outline"></ion-icon>
+        <h4>Aportar</h4>
+      </ion-card>
+    </button>
+    <button (click)="groupsView()">
+      <ion-card class="item">
+        <ion-icon name="chatbox-outline"></ion-icon>
+        <h4>Grupos</h4>
+      </ion-card>
+    </button>
+    <button (click)="historyView()">
+      <ion-card class="item">
+        <ion-icon name="file-tray-full-outline"></ion-icon>
+        <h4>Historial</h4>
+      </ion-card>
+    </button>
+    <button (click)="profileView()">
+      <ion-card class="item">
+        <ion-icon name="person-outline"></ion-icon>
+        <h4 class="btn-perfil">Perfil</h4>
+      </ion-card>
+    </button>
+    <button (click)="reportsView()">
+      <ion-card class="item">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <h4>Reportes</h4>
+      </ion-card>
+    </button>
+    <button (click)="walletView()">
+      <ion-card class="item">
+        <ion-icon name="wallet-outline"></ion-icon>
+        <h4>Tarjetas</h4>
+      </ion-card>
+    </button>
+  </div>
+
+  <footer>
+    <div class="custom-tab-bar">
+      <div class="items">
+        <div class="tab-item">
+          <button (click)="homeView()">
+            <ion-icon name="home-outline"></ion-icon>
+            <p>Home</p>
+          </button>
+        </div>
+        <div class="tab-item">
+          <button (click)="settingsView()">
+            <ion-icon name="settings-outline"></ion-icon>
+            <p>Ajustes</p>
+          </button>
+        </div>
+        <div class="tab-item">
+          <button (click)="logout()">
+            <ion-icon name="log-out-outline"></ion-icon>
+            <p>Salir</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</ion-content>

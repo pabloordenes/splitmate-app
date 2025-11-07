@@ -1,0 +1,28 @@
+<ion-content>
+  <img src="assets/icon/logo.png" alt="logo">
+  <div class="register-content">
+    <h1>Iniciar Sesión</h1>
+    <ion-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="inputs">
+          <div class="bg-input">
+            <ion-input formControlName="email" label="Email" labelPlacement="stacked" [clearOnEdit]="true" type="email" placeholder="mail@example.com">
+              <ion-icon slot="start" name="mail-outline"></ion-icon>
+            </ion-input>
+          </div>
+          <div class="bg-input">
+            <ion-input formControlName="password" label="Contraseña" labelPlacement="stacked" type="password" placeholder="**********">
+              <ion-icon slot="start" name="lock-closed"></ion-icon>
+              <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+            </ion-input>
+          </div>
+        </div>
+        <div class="register-container">
+          <p>¿No tienes cuenta? <button class="secondary-btn center" (click)="redirectRegister()">Regístrate</button></p>
+          <button class="main-btn" type="submit" [disabled]="loginForm.invalid">Iniciar Sesión</button>
+          <button class="secondary-btn" (click)="redirectRecoverPass()">Recuperar contraseña</button>
+        </div>
+      </form>
+    </ion-card-content>
+  </div>
+</ion-content>

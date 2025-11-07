@@ -1,0 +1,13 @@
+<ion-content [fullscreen]="true">
+  <h2>Notificaciones</h2>
+  <button (click)="addNotification()">Añadir notificacion</button>
+  <ul>
+    <li *ngFor="let notification of notifications">
+      <h3>Titulo: {{ notification.name }}</h3>
+      <p>Mensaje: {{ notification.message }}</p>
+      <p>Tipo: {{ notification.type }}</p>
+<!--      <button (click)="markAsRead(notification.id)">Marcar como leída</button>-->
+<!--      <button (click)="deleteNotification(notification.id)">Eliminar</button>-->
+    </li>
+  </ul>
+</ion-content>

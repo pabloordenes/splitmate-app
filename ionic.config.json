@@ -1,0 +1,7 @@
+{
+  "name": "SplitMate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

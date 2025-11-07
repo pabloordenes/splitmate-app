@@ -1,0 +1,23 @@
+<ion-content>
+  <div class="header">
+    <button class="back-button" (click)="back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <h4>Seguridad</h4>
+  </div>
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/icon/logo.png" alt="logo">
+        <h2>Reestablece tu contraseña</h2>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form (submit)="sendMail()" >
+          <ion-input [(ngModel)]="email" name="email" label="Email" labelPlacement="stacked" [clearOnEdit]="true" type="email" placeholder="mail@example.com">
+            <ion-icon slot="start" name="mail-outline"></ion-icon>
+          </ion-input>
+          <button class="main-btn" type="submit">Enviar</button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+</ion-content>

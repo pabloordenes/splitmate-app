@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="header">
+    <button class="back-button" (click)="back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <h4>Grupos</h4>
+    <button (click)="createGroup()">
+      <ion-icon name="add-circle"></ion-icon>
+    </button>
+  </div>
+
+  <ion-list>
+    <div class="groups-item" *ngFor="let grupo of grupos" (click)="openSelectedChat(grupo.id)">
+      <div class="group-button">
+        <ion-avatar>
+          <img alt="Avatar" src="assets/icon/missingpfp-icon.png" />
+        </ion-avatar>
+        <ion-label>{{ grupo.nombre }}</ion-label>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>
